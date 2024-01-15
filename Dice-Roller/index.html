@@ -1,35 +1,34 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
-      rel="stylesheet"
-    />
-    <link href="style.css" rel="stylesheet" />
-    <title>Dice</title>
-  </head>
 
-  <body>
-    <h1>Dice Roller</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <title>Dice</title>
+</head>
 
-    <div class="dices-container">
-      <div class="dice">
-        <p>Player 1</p>
-        <img src="assets/dice6.png" alt="Dice One" id="dice-one" />
-      </div>
+<body>
+  <h1 id="result">Dice Roller</h1>
 
-      <div class="dice">
-        <p>Player 2</p>
-        <img src="assets/dice6.png" alt="Dice Two" id="dice-two" />
-      </div>
+  <div class="dices-container">
+    <div class="dice">
+      <p>Player 1</p>
+      <img src="assets/dice6.png" alt="Dice One" id="dice-one" />
     </div>
 
-    <div class="btn-container">
-      <button id="roll-dice-btn">Roll Dice</button>
+    <div class="dice">
+      <p>Player 2</p>
+      <img src="assets/dice6.png" alt="Dice Two" id="dice-two" />
     </div>
+  </div>
 
-    <script src="index.js"></script>
-  </body>
+  <div class="btn-container">
+    <button id="roll-dice-btn">Roll Dice</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
 </html>

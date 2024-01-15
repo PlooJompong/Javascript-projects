@@ -12,7 +12,7 @@ h1 {
   margin: 30px;
   font-family: "Lobster", cursive;
   text-align: center;
-  font-size: 8rem;
+  font-size: 7rem;
   color: #4ecca3;
 }
 
@@ -43,11 +43,13 @@ button {
   padding: 10px 30px;
   font-size: 1rem;
   font-family: "Lobster", cursive;
+  color: rgb(140, 30, 24);
   background-color: wheat;
   border: none;
   border-radius: 8px;
 }
 
 button:hover {
-  color: #4ecaa3;
+  color: wheat;
+  background-color: rgb(140, 30, 24);
 }
