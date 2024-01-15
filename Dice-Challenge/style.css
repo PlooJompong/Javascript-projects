@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #393e46;
+}
+
+h1 {
+  margin: 30px;
+  font-family: "Lobster", cursive;
+  text-align: center;
+  font-size: 8rem;
+  color: #4ecca3;
+}
+
+p {
+  margin-bottom: 30px;
+  font-family: "Indie Flower", cursive;
+  font-size: 2rem;
+  color: #4ecca3;
+}
+
+.dices-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+img {
+  width: 60%;
+}
+
+.button-container {
+  text-align: center;
+}
+
+button {
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-family: "Lobster", cursive;
+  background-color: wheat;
+  border: none;
+  border-radius: 8px;
+}
+
+button:hover {
+  color: #4ecaa3;
+}
