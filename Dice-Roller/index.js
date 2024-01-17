@@ -6,26 +6,24 @@ const ROLL_DICE_BTN = document.querySelector("#roll-dice-btn");
 if (!DISPLAY_RESULT || !DICE_ONE || !DICE_TWO || !ROLL_DICE_BTN) {
   console.error("One or more elements not found.");
 } else {
-  let diceOne;
-  let diceTwo;
+  const rollDice = () => {
+    const { diceOne, diceTwo } = randomNumber();
+    displayDice(diceOne, diceTwo);
+    checkResult(diceOne, diceTwo);
+  };
 
-  function rollDice() {
-    randomNumber();
-    displayDice();
-    checkResult();
-  }
+  const randomNumber = () => {
+    const diceOne = Math.floor(Math.random() * 6 + 1);
+    const diceTwo = Math.floor(Math.random() * 6 + 1);
+    return { diceOne, diceTwo };
+  };
 
-  function randomNumber() {
-    diceOne = Math.floor(Math.random() * 6 + 1);
-    diceTwo = Math.floor(Math.random() * 6 + 1);
-  }
-
-  function displayDice() {
+  const displayDice = (diceOne, diceTwo) => {
     DICE_ONE.setAttribute("src", `assets/dice${diceOne}.png`);
     DICE_TWO.setAttribute("src", `assets/dice${diceTwo}.png`);
-  }
+  };
 
-  function checkResult() {
+  const checkResult = (diceOne, diceTwo) => {
     if (diceOne > diceTwo) {
       DISPLAY_RESULT.innerText = "Player 1 wins!";
     } else if (diceOne < diceTwo) {
@@ -33,7 +31,7 @@ if (!DISPLAY_RESULT || !DICE_ONE || !DICE_TWO || !ROLL_DICE_BTN) {
     } else {
       DISPLAY_RESULT.innerText = "Draw!";
     }
-  }
+  };
 
   ROLL_DICE_BTN.addEventListener("click", rollDice);
 }
