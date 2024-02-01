@@ -15,19 +15,33 @@ footer {
   font-family: sans-serif;
 }
 
-.a {}
+.a {
+  background-image: url("assets/images/crash.png");
+}
 
-.s {}
+.s {
+  background-image: url("assets/images/kick.png");
+}
 
-.d {}
+.d {
+  background-image: url("assets/images/snare.png");
+}
 
-.f {}
+.f {
+  background-image: url("assets/images/tom1.png");
+}
 
-.j {}
+.j {
+  background-image: url("assets/images/tom2.png");
+}
 
-.k {}
+.k {
+  background-image: url("assets/images/tom3.png");
+}
 
-.l {}
+.l {
+  background-image: url("assets/images/tom4.png");
+}
 
 .set {
   margin: 10% auto;
