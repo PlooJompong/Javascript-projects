@@ -1,27 +1,68 @@
 const buttonColors = ["red", "blue", "green", "yellow"];
-const gamePattern = [];
-const userClickedPattern = [];
 
-nextSequence();
+let gamePattern = [];
+let userClickedPattern = [];
 
-$(".btn").on("click", function() {
-  const userChosenColor = $(this).attr("id");
-  userClickedPattern.push(userChosenColor);
+let started = false;
+let level = 0;
 
-  playSound(userChosenColor);
-  $($(this)).fadeIn(100).fadeOut(100).fadeIn(100);
+$(document).on("keypress", function () {
+  if (!started) {
+    setTimeout(function () {
+      nextSequence();
+      started = true;
+    }, 500);
+  }
 });
 
-function nextSequence() {
-  const randomNumber = Math.floor(Math.random() * 4);
-  let randomChosenColor = buttonColors[randomNumber];
-  gamePattern.push(randomChosenColor);
+$(".btn").on("click", function () {
+  if (started) {
+    let userChosenColour = $(this).attr("id");
+    userClickedPattern.push(userChosenColour);
 
-  $(`#${randomChosenColor}`).fadeIn(100).fadeOut(100).fadeIn(100);
-  playSound(randomChosenColor);
+    playSound(userChosenColour);
+    animatePress(userChosenColour);
+
+    checkAnswer(userClickedPattern.length - 1);
+  } else {
+    $("#level-title").fadeIn(125).fadeOut(125).fadeIn(125);
+  }
+});
+
+function checkAnswer(currentLevel) {
+  if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
+    if (userClickedPattern.length === gamePattern.length) {
+      setTimeout(function () {
+        nextSequence();
+      }, 1000);
+    }
+  } else {
+    console.log("wrong");
+  }
+}
+
+function nextSequence() {
+  userClickedPattern = [];
+
+  level++;
+  $("#level-title").text("Level " + level);
+
+  const randomNumber = Math.floor(Math.random() * 4);
+  const randomChosenColour = buttonColors[randomNumber];
+  gamePattern.push(randomChosenColour);
+
+  $(`#${randomChosenColour}`).fadeIn(125).fadeOut(125).fadeIn(125);
+  playSound(randomChosenColour);
 }
 
 function playSound(name) {
   const audio = new Audio(`sounds/${name}.mp3`);
   audio.play();
+}
+
+function animatePress(currentColor) {
+  $(`#${currentColor}`).addClass("pressed");
+  setTimeout(function () {
+    $(`#${currentColor}`).removeClass("pressed");
+  }, 100);
 }
