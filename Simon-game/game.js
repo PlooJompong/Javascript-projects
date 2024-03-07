@@ -3,17 +3,31 @@ const buttonColors = ["red", "blue", "green", "yellow"];
 let gamePattern = [];
 let userClickedPattern = [];
 
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
 let started = false;
 let level = 0;
 
-$(document).on("keypress", function () {
-  if (!started) {
-    setTimeout(function () {
-      nextSequence();
-      started = true;
-    }, 500);
-  }
-});
+if (isMobile) {
+  $("#level-title").text("Touch to Start");
+  $(document).on("touchstart", function () {
+    if (!started) {
+      setTimeout(function () {
+        nextSequence();
+        started = true;
+      }, 500);
+    }
+  });
+} else {
+  $(document).on("keypress", function () {
+    if (!started) {
+      setTimeout(function () {
+        nextSequence();
+        started = true;
+      }, 500);
+    }
+  });
+}
 
 $(".btn").on("click", function () {
   if (started) {
@@ -25,8 +39,10 @@ $(".btn").on("click", function () {
 
     checkAnswer(userClickedPattern.length - 1);
   } else {
-    $("#level-title").fadeIn(125).fadeOut(125).fadeIn(125);
-    playSound("wrong");
+    if (!isMobile) {
+      $("#level-title").fadeIn(125).fadeOut(125).fadeIn(125);
+      playSound("wrong");
+    }
   }
 });
 
@@ -64,7 +80,11 @@ function gameOver() {
 
   playSound("wrong");
 
-  $("#level-title").text("Game Over, Press Any Key to Restart");
+  if (isMobile) {
+    $("#level-title").text("Game Over, Touch to Restart");
+  } else {
+    $("#level-title").text("Game Over, Press Any Key to Restart");
+  }
   started = false;
   level = 0;
   gamePattern = [];
