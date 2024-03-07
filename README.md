@@ -9,7 +9,7 @@
 
 ### 2. Drum Kit
 
-![Screenshot 2024-02-15 at 15 30 11](https://github.com/PlooJompong/Javascript-projects/assets/50630228/a580ff42-ae40-4e01-bc02-6cde8e06bff1)
+![Drum Kit](https://github.com/PlooJompong/Javascript-projects/assets/50630228/e4090fc7-7cdd-4b5d-9be7-266b259744e7)
 
 - switch
 - new Audio()
@@ -17,11 +17,13 @@
 
 ### 3. Form Validation
 
-![Screenshot 2024-02-16 at 12 23 19](https://github.com/PlooJompong/Javascript-projects/assets/50630228/92c4b78d-8404-492a-a18c-cf62b5310de0) ![Screenshot 2024-02-16 at 12 22 46](https://github.com/PlooJompong/Javascript-projects/assets/50630228/8a1bd908-93bb-4d1c-8704-61252476228e)
+![Form Validation](https://github.com/PlooJompong/Javascript-projects/assets/50630228/010f718b-1d5b-47cc-8835-d0d172ba1381)
 
 ### 4. Simon Game
 
 ![Simon Game](https://github.com/PlooJompong/Javascript-projects/assets/50630228/89a6971d-c67f-44b5-a7ef-d1716c4d2cdc)
+
+- Build with jQuery for efficient DOM manipulation
 
 Demo: https://65e9b59a5ecc98042c179cb7--remarkable-seahorse-b8fe4d.netlify.app/
 
