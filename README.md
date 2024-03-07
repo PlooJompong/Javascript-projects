@@ -18,3 +18,11 @@
 ### 3. Form Validation
 
 ![Screenshot 2024-02-16 at 12 23 19](https://github.com/PlooJompong/Javascript-projects/assets/50630228/92c4b78d-8404-492a-a18c-cf62b5310de0) ![Screenshot 2024-02-16 at 12 22 46](https://github.com/PlooJompong/Javascript-projects/assets/50630228/8a1bd908-93bb-4d1c-8704-61252476228e)
+
+### 4. Simon Game
+
+![Simon Game](https://github.com/PlooJompong/Javascript-projects/assets/50630228/89a6971d-c67f-44b5-a7ef-d1716c4d2cdc)
+
+Demo: https://65e9b59a5ecc98042c179cb7--remarkable-seahorse-b8fe4d.netlify.app/
+
+
