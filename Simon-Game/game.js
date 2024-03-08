@@ -12,19 +12,14 @@ if (isMobile) {
   $("#level-title").text("Touch to Start");
   $(document).on("touchstart", function () {
     if (!started) {
-      setTimeout(function () {
-        nextSequence();
-        started = true;
-      }, 500);
+      startGame();
     }
   });
 } else {
-  $(document).on("keypress", function () {
+  $("#level-title").text("Press Any Key to Start");
+  $(document).on("keydown", function () {
     if (!started) {
-      setTimeout(function () {
-        nextSequence();
-        started = true;
-      }, 500);
+      startGame();
     }
   });
 }
@@ -46,16 +41,11 @@ $(".btn").on("click", function () {
   }
 });
 
-function checkAnswer(currentLevel) {
-  if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
-    if (userClickedPattern.length === gamePattern.length) {
-      setTimeout(function () {
-        nextSequence();
-      }, 1000);
-    }
-  } else {
-    gameOver();
-  }
+function startGame() {
+  setTimeout(function () {
+    nextSequence();
+    started = true;
+  }, 800);
 }
 
 function nextSequence() {
@@ -70,6 +60,18 @@ function nextSequence() {
 
   $(`#${randomChosenColour}`).fadeIn(125).fadeOut(125).fadeIn(125);
   playSound(randomChosenColour);
+}
+
+function checkAnswer(currentLevel) {
+  if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
+    if (userClickedPattern.length === gamePattern.length) {
+      setTimeout(function () {
+        nextSequence();
+      }, 1000);
+    }
+  } else {
+    gameOver();
+  }
 }
 
 function gameOver() {
