@@ -8,4 +8,4 @@
 
 - Slight delay on devices with touch screen.
 
-Demo: https://65e9b59a5ecc98042c179cb7--remarkable-seahorse-b8fe4d.netlify.app/
+Demo: https://65eb8c1e4ab5701671156e35--remarkable-seahorse-b8fe4d.netlify.app/
