@@ -4,5 +4,8 @@
 
 - Build with jQuery for efficient DOM manipulation
 
-Demo: https://65e9b59a5ecc98042c179cb7--remarkable-seahorse-b8fe4d.netlify.app/
+# Known issue:
 
+- Slight delay on devices with touch screen."
+
+Demo: https://65e9b59a5ecc98042c179cb7--remarkable-seahorse-b8fe4d.netlify.app/

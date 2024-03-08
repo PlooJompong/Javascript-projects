@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+}
+
 body {
   text-align: center;
   background-color: #011f3f;
