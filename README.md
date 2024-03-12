@@ -34,5 +34,8 @@ Demo: https://65eb8c1e4ab5701671156e35--remarkable-seahorse-b8fe4d.netlify.app/
 ### 5. Movie Seat Booking
 
 - Build with jQuery
+
+### 6. Custom Video Player
 - play()
 - pause()
+
