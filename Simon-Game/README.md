@@ -2,7 +2,7 @@
 
 ![Simon Game](https://github.com/PlooJompong/Javascript-projects/assets/50630228/89a6971d-c67f-44b5-a7ef-d1716c4d2cdc)
 
-- Build with jQuery for efficient DOM manipulation
+- Build with jQuery
 
 ### Known issue
 

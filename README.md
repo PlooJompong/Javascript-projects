@@ -30,3 +30,9 @@ Demo: https://65eb8c1e4ab5701671156e35--remarkable-seahorse-b8fe4d.netlify.app/
 ### 4. Form Validation
 
 ![Form Validation](https://github.com/PlooJompong/Javascript-projects/assets/50630228/3ac4f79a-befd-44aa-9561-02b96a247399)
+
+### 5. Movie Seat Booking
+
+- Build with jQuery
+- play()
+- pause()
