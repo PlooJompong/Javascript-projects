@@ -33,6 +33,8 @@ Demo: https://65eb8c1e4ab5701671156e35--remarkable-seahorse-b8fe4d.netlify.app/
 
 ### 5. Movie Seat Booking
 
+![Movie Seat Booking](https://github.com/PlooJompong/Javascript-projects/assets/50630228/28b8624b-6976-43a2-ac1f-6c0c19161092)
+
 - Build with jQuery
 - localStorage.setItem()
 - localStorage.getItem()
