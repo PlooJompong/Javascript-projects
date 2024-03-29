@@ -41,5 +41,7 @@ Demo: https://65eb8c1e4ab5701671156e35--remarkable-seahorse-b8fe4d.netlify.app/
 
 ### 6. Exchange Rate Calculator
 
+![Exchange Rate Calculator](https://github.com/PlooJompong/Javascript-projects/assets/50630228/e2feee56-3639-4633-96e4-995602d41cce)
+
 - Build with jQuery
 - fetch()
