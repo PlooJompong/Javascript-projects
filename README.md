@@ -38,3 +38,8 @@ Demo: https://65eb8c1e4ab5701671156e35--remarkable-seahorse-b8fe4d.netlify.app/
 - Build with jQuery
 - localStorage.setItem()
 - localStorage.getItem()
+
+### 6. Exchange Rate Calculator
+
+- Build with jQuery
+- fetch()
