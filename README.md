@@ -45,3 +45,7 @@ Demo: https://65eb8c1e4ab5701671156e35--remarkable-seahorse-b8fe4d.netlify.app/
 
 - Build with jQuery
 - fetch()
+
+### 7. Tic Tac Toe
+
+- Build with React
