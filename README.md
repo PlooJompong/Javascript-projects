@@ -48,15 +48,21 @@ Demo: https://65eb8c1e4ab5701671156e35--remarkable-seahorse-b8fe4d.netlify.app/
 
 ### 7. Tic Tac Toe
 
+![Tic Tac Toe](https://github.com/PlooJompong/Javascript-projects/assets/50630228/31652f80-72f5-44c5-8968-45dc5ad2644c)
+
 - Build with React & Vite
 - useState
 
 ### 8. Invesment Calculator
 
+![Invesment Calculator](https://github.com/PlooJompong/Javascript-projects/assets/50630228/fbcb610d-9df7-4779-ab83-70bbf5a7a31c)
+
 - Build with React & Vite
 - Bun as package manager
 
 ### 9. Final Countdown
+
+![Final Countdown](https://github.com/PlooJompong/Javascript-projects/assets/50630228/0de43094-e3e7-4a47-8c13-99588b77fa94)
 
 - Build with React & Vite
 - useRef
