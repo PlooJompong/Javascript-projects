@@ -48,4 +48,17 @@ Demo: https://65eb8c1e4ab5701671156e35--remarkable-seahorse-b8fe4d.netlify.app/
 
 ### 7. Tic Tac Toe
 
-- Build with React
+- Build with React & Vite
+- useState
+
+### 8. Invesment Calculator
+
+- Build with React & Vite
+- Bun as package manager
+
+### 9. Final Countdown
+
+- Build with React & Vite
+- useRef
+- useImperativeHandle
+- createPortal
