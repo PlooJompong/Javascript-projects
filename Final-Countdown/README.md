@@ -4,5 +4,6 @@
 
 - Build with React & Vite
 - useRef
+- forwardRef
 - useImperativeHandle
 - createPortal
