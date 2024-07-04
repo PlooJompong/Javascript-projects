@@ -1,8 +1,14 @@
+import ProjectSidebar from "./components/ProjectSidebar";
+import NewProject from "./components/NewProject";
+import NoProjectSelected from "./components/NoProjectSelected";
+
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline text-red-600">
-      Hello Tailwind
-    </h1>
+    <main className="my-8 flex h-screen gap-8">
+      <ProjectSidebar />
+      {/* <NewProject /> */}
+      <NoProjectSelected />
+    </main>
   );
 }
 
