@@ -63,7 +63,7 @@ function NewProject({ onAdd, onCancel }) {
         </menu>
         <div>
           <Input type="text" ref={titleRef} label="Title" />
-          <Input ref={descriptionRef} label="Description" isTextArea />
+          <Input ref={descriptionRef} label="Description" textArea />
           <Input type="date" ref={dueDateRef} label="Due Date" />
         </div>
       </div>
