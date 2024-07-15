@@ -8,6 +8,10 @@ function NewTask({ onAdd }) {
   }
 
   function handleClick() {
+    if (enteredTask.trim().length === 0) {
+      return;
+    }
+
     onAdd(enteredTask);
     setEnteredTask("");
   }
